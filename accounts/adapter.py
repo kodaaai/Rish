@@ -14,6 +14,7 @@ class AccountAdapter(DefaultAccountAdapter):
         user = super(AccountAdapter, self).save_user(request, user, form, commit=False)
         user.university = form.cleaned_data.get('university')
         user.openingSystem = form.cleaned_data.get('openingSystem')
+        user.username = form.cleaned_data.get('username')
         user.department = form.cleaned_data.get('department')
         user.subject = form.cleaned_data.get('subject')
         user.course = form.cleaned_data.get('course')

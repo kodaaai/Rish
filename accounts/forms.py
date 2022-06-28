@@ -6,16 +6,24 @@ from allauth.account.forms import SignupForm, LoginForm
 class CustomSignupForm(SignupForm):
 
     # 大学名
-    university = forms.ModelChoiceField(
+    university = forms.ChoiceField(
         label='大学名',
-        queryset=university.objects.all(),
-        initial=university.objects.get(id=1),
+        choices=(
+            ('琉球大学', '琉球大学')
+        )
     )
-
+    ''' queryset=university.objects.all(),
+        initial=university.objects.get(id=1),
+ '''
     # 昼間主・夜間主
     openingSystem = forms.ChoiceField(
         label='昼間主・夜間主',
         choices=User.openingSystems,
+    )
+
+    username = forms.CharField(
+        label='ユーザーネーム',
+        max_length=20,
     )
 
     # 学部
@@ -71,6 +79,7 @@ class CustomSignupForm(SignupForm):
     def signup(self, request, user):
         user.university = self.cleaned_data['university']
         user.openingSystem = self.cleaned_data['openingSystem']
+        user.username = self.cleaned_data['username']
         user.department = self.cleaned_data['department']
         user.subject = self.cleaned_data['subject']
         user.course = self.cleaned_data['course']
@@ -88,7 +97,7 @@ class CustomSignupForm(SignupForm):
         # それぞれの項目にform-controlのスタイルを適用
         form_fields = ['university', 'openingSystem', 'department', 'subject',
                        'course', 'major', 'specialization', 'graduationYear',
-                       'email', 'password1', 'password2', ]
+                       'email', 'username', 'password1', 'password2', ]
 
         for form_field in form_fields:
             self.fields[f'{form_field}'].widget.attrs['class'] = "form-control"

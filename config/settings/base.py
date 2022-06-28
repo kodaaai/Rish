@@ -137,9 +137,9 @@ SITE_ID = 1
 # カスタムユーザーの設定
 AUTH_USER_MODEL = 'accounts.User'
 ACCOUNT_USER_MODEL_USERNAME_FIELD = None
-ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_EMAIL_REQUIRED = True
 
 # SignupFormからの情報をcustomusermodelに保存するのに必要
 ACCOUNT_ADAPTER = 'accounts.adapter.AccountAdapter'

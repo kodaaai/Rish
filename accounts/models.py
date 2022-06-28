@@ -4,27 +4,33 @@ from django.contrib.auth.models import BaseUserManager, AbstractBaseUser, Permis
 
 class UserManager(BaseUserManager):
     """ ユーザーマネージャー """
+    use_in_migrations = True
 
     def _create_user(self, email, password, **extra_fields):
+        """
+        Create and save a user with the given username, email, and password.
+        """
+        if not email:
+            raise ValueError("The given username must be set")
         email = self.normalize_email(email)
         user = self.model(email=email, **extra_fields)
         user.set_password(password)
-        user.save(using=self._db)
+        user.save(using=self.db)
         return user
 
-    def create_user(self, email=None, password=None, **extra_fields):
-        extra_fields.setdefault('is_staff', False)
-        extra_fields.setdefault('is_superuser', False)
+    def create_user(self, email, password=None, **extra_fields):
+        extra_fields.setdefault("is_staff", False)
+        extra_fields.setdefault("is_superuser", False)
         return self._create_user(email, password, **extra_fields)
 
-    def create_superuser(self, email=None, password=None, **extra_fields):
-        extra_fields.setdefault('is_staff', True)
-        extra_fields.setdefault('is_superuser', True)
+    def create_superuser(self, email, password, **extra_fields):
+        extra_fields.setdefault("is_staff", True)
+        extra_fields.setdefault("is_superuser", True)
 
-        if extra_fields.get('is_staff') is not True:
-            raise ValueError('Superuser must have is_staff=True.')
-        if extra_fields.get('is_superuser') is not True:
-            raise ValueError('Superuser must have is_superuser=True.')
+        if extra_fields.get("is_staff") is not True:
+            raise ValueError("Superuser must have is_staff=True.")
+        if extra_fields.get("is_superuser") is not True:
+            raise ValueError("Superuser must have is_superuser=True.")
 
         return self._create_user(email, password, **extra_fields)
 
@@ -46,6 +52,10 @@ class User(AbstractBaseUser, PermissionsMixin):
         verbose_name='大学名',
         on_delete=models.CASCADE,
     )
+
+    # 琉大メアド
+    email = models.EmailField('琉大メールアドレス', unique=True)
+    username = models.CharField('ユーザーネーム', max_length=20, default='user', unique=True)
 
     # 昼間主・夜間主
     openingSystems = (
@@ -171,9 +181,6 @@ class User(AbstractBaseUser, PermissionsMixin):
     # 卒業見込み
     graduationYear = models.CharField('卒業見込み年', choices=graduationYears, max_length=10)
 
-    # 琉大メアド
-    email = models.EmailField('琉大メールアドレス', unique=True)
-
     # 登録日
     created_at = models.DateField('登録日', auto_now_add=True)
 
@@ -189,7 +196,8 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     EMAIL_FIELD = 'email'
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['university', 'openingSystem', 'department', 'subject', 'graduationYear', ]
+    REQUIRED_FIELDS = ['university', 'openingSystem',
+                       'department', 'subject', 'graduationYear', 'username']
 
     def __str__(self):
         return self.email
