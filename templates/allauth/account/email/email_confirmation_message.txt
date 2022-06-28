@@ -1,0 +1,19 @@
+{% extends "account/email/base_message.txt" %}
+{% load account %}
+{% load i18n %}
+
+{% block content %}{% autoescape off %}{% user_display user as user_display %}{% blocktrans with site_name=current_site.name site_domain=current_site.domain %}
+本登録メール
+
+この度は「Rish」に仮登録していただき、誠にありがとうございます。
+まだ登録は完了しておりません。
+下記のリンクをクリックし、本登録を完了させるようよろしくお願いいたします。
+{{ activate_url }}
+
+尚、このメールに関して身に覚えがないようでしたら、お手数ですが、削除していただきますようお願いします。
+
+*******************************************************************************
+Rish運営係メールアドレス：{{ user_display }} 
+Rish公式HP {{ site_domain }}
+
+ {% endblocktrans %}{% endautoescape %}{% endblock %}

@@ -1,0 +1,44 @@
+{% extends "account/base.html" %}
+{% load static %}
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+  <ul class="nav col-auto mb-5">
+    <li class="nav-item">
+      <a class="nav-link disabled" href="{% url 'account_login'%}" tabindex="-1" aria-disabled="true">ログイン</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="{% url 'account_signup' %}">新規登録</a>
+    </li>
+  </ul>
+</div>
+</div>
+<div class="mb-4">
+  <p>講義評価の閲覧、検索機能、講義評価投稿機能を利用するには、ログインする必要があります。
+    <br>まだRishに会員登録していない方は、新規登録からユーザー登録を行ってください。
+  </p>
+</div>
+<form class="login" method="POST" action="{% url 'account_login' %}">
+  {% csrf_token %}
+  {{ form.as_p }}
+  {% if redirect_field_value %}
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  {% endif %}
+  <div class="text-center">
+    <a href="{% url 'contact:password-contact' %}">パスワードをお忘れですか？</a>
+  </div>
+  <!-- <div class="text-center">
+    <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?"%}</a>
+  </div> -->
+  <button class="primaryAction d-grid col-4 mx-auto mt-3 btn btn-primary" type="submit">
+    {% trans "Sign In"%}</button>
+
+</form>
+
+
+{% endblock %}

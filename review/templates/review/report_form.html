@@ -1,0 +1,82 @@
+{% extends 'review/base.html'%}
+{% load static%}
+{% load crispy_forms_tags %}
+{% block content %}
+<header class="bg-primary text-white">
+    <div class="container px-4 text-center">
+        <h1 class="fw-bolder">Rish</h1>
+        <p class="lead">This website can help your course registration</p>
+    </div>
+</header>
+<!-- section.search は余白をコントロールするために記述している -->
+<!-- Evaluate section-->
+<section class="bg-light evaluation" id="evaluate">
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="パンくずリスト">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{% url 'review:home' %}">ホーム</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">評価ページ</li>
+                    </ol>
+                </nav>
+                <h2>Evaluate</h2>
+                <p class="lead description">講義を評価する</p>
+                <p class="description mx-2">
+                    楽単講義、きついけど役に立つ講義、出席を取るかどうか、zoomで顔出すかどうか、教授の人柄など、様々な講義に関する情報をお待ちしております。</p>
+                <!-- ↓タグUIの実装と、バリデーションルールの追加が必要 -->
+                <form method='POST' class="container">
+                    {% csrf_token %}
+                    <hr>
+                    {{ form.university | as_crispy_field }}
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            {{ form.year | as_crispy_field }}
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            {{ form.season | as_crispy_field }}
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="mb-2">
+                        {{ form.subject_class | as_crispy_field }}
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                            {{ form.class_name | as_crispy_field }}
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            {{ form.teacher | as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        {{ form.attendants_check_frequency | as_crispy_field }}
+                    </div>
+                    <div class="mb-4">
+                        {{ form.scoring_method | as_crispy_field }}
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                            {{ form.credit_difficulty | as_crispy_field }}
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            {{ form.quality | as_crispy_field }}
+                        </div>
+                    </div>
+
+                    <div class="mb-2">
+                        {{ form.opinion | as_crispy_field }}
+                    </div>
+                    <div class="mb-4">
+                        {{ form.tag | as_crispy_field }}
+                    </div>
+                    <hr>
+                    <button type="submit"
+                        class="d-grid col-4 mx-auto mt-5 btn btn-primary rounded-pill">レビューを投稿する</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

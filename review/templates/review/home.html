@@ -1,0 +1,133 @@
+{% extends 'review/base.html'%}
+{% load static %}
+{% block content %}
+
+<!-- 全画面をmarginとpaddingで無理やりやっているので、要修正 -->
+<header class="bg-primary text-white">
+    <div class="container px-4 text-center">
+        <h1 class="fw-bolder">Rish</h1>
+        <p class="lead english mb-5">This website can help your course registration</p>
+        <div class="row gx-4 justify-content-center">
+            <!-- ブレークポイントをlgに指定 -->
+
+            <div class="col-lg-8">
+                <form action="{% url 'search:result' %}">
+                    <div class="input-group px-5">
+
+                        <input type="text" name="query" value="{{ request.GET.query }}" class="form-control shadow-sm"
+                            placeholder="講義名あるいは教員名を入力してください" id="keyword" autocomplete="off" method="get">
+                        <span class="input-group-btn">
+                            <!-- 検索の一覧ページを返す -->
+                            <button type="submit" class="btn btn-secondary">
+                                <i class="fa-solid fa-magnifying-glass"></i></button>
+                        </span>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <!-- row-cols-○で一行の列の数を固定する -->
+        <div class="row row-cols-4 justify-content-center mt-5">
+            <div class="col-auto">
+                <a class="btn btn-lg btn-slide bgleft" href="{% url 'review:review-create' %}"><span>Evaluate your
+                        class!</span></a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Evaluation lists section-->
+<section class="bg-white evaluation" id="evaluate">
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h2>New reviews</h2>
+                <p class="lead description text-muted">新着講義レビュー</p>
+                <!-- 'shadow p-3 mb-5 bg-white rounded'で影を指定 -->
+                {% for review in reviews %}
+                <div class="card shadow mb-4 rounded">
+                    <div class="card-header bg-primary">
+                        <h5 class="mt-2 text-light">{{ review.class_name }}</h5><small class="card-title text-light">
+                            {% for teacher in review.teacher.all %}{{ teacher.name }}
+                            {% endfor %} - {{ review.year }}/{{ review.season }}/{{ review.subject_class }} </small>
+                    </div>
+                    <div class="card-body mt-0">
+                        <!-- text-truncateによってプレビュー画面の表示文字列に制限かけているので、'See more' を押したときの遷移を、条件に応じてログイン・新規登録ページか、評価の詳細ページへ飛ばすようにパスを書いて欲しい -->
+                        <p class="card-text text-truncate">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <small class="badge bg-light text-dark">単位取得難易度：</small><span
+                                        class="difficulty_star5_rating"
+                                        data-rate="{{ review.credit_difficulty }}"></span>
+                                </div>
+                                <div class="col">
+                                    <span class="badge bg-light text-dark">講義の質：</span><span class="star5_rating"
+                                        data-rate="{{ review.quality }}"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="container">
+                            <span class="badge bg-light text-dark">出席確認：{{ review.attendants_check_frequency}}
+                            </span>
+                            <br>
+
+                            <span class="badge bg-light text-dark">採点方法：
+                                {% for scoring_method in review.scoring_method.all %}
+                                {{ scoring_method.name }}
+                                {% endfor %}</span>
+                            <br>
+
+                            <span class="badge bg-light text-dark">タグ：
+                                {% for tag in review.tag.all %}
+                                {{tag.name}}
+                                {% endfor %}</span>
+                            <br>
+
+                            {% if review.opinion %}
+                            <span class="badge bg-light text-dark">コメント:{{ review.opinion }}</span>
+                            {% else %}
+                            <span class="badge bg-light text-dark">コメント: - </span>
+                            {% endif %}
+                        </div>
+                        </p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About section-->
+<section class="bg-light about" id="about">
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h2>About</h2>
+                <p class="lead description">私たちについて</p>
+                <h6 class="lead description">
+                    Rishは学生のための講義の口コミサイトです。
+                </h6>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact section-->
+<section class="bg-white contact" id="contact">
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h2>Contact</h2>
+                <p class="lead description">お問い合わせ</p>
+                <p>お問い合わせは以下のメールアドレスにお願いします。エラー報告や新規機能の提案等ございましたら、何なりとお申し付けください。</p>
+                <ul>
+                    <li>担当：Rish開発担当
+                    <li>メールアドレス：rish.ryukyu@gmail.com
+                </ul>
+                <p>※エラー報告の場合は発生場所やエラー内容等をできるだけ詳細に教えていただけると幸いです。</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

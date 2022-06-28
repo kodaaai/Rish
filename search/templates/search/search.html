@@ -1,0 +1,150 @@
+{% extends 'review/base.html'%}
+{% load static %}
+
+{% block content %}
+<!-- 全画面をmarginとpaddingで無理やりやっているので、要修正 -->
+<header class="bg-primary text-white">
+    <div class="container px-4 text-center">
+        <h1 class="fw-bolder">Rish</h1>
+        <p class="lead english mb-5">This website can help your course registration</p>
+        <div class="row gx-4 justify-content-center">
+            <!-- ブレークポイントをlgに指定 -->
+
+            <div class="col-lg-8">
+                <form action="{% url 'search:result' %}">
+                    <div class="input-group px-5">
+
+                        <input type="text" name="query" value="{{ request.GET.query }}" class="form-control shadow-sm"
+                            placeholder="講義名あるいは教員名を入力してください" id="keyword" autocomplete="off" method="get">
+                        <span class="input-group-btn">
+                            <!-- 検索の一覧ページを返す -->
+                            <button type="submit" class="btn btn-secondary">
+                                <i class="fa-solid fa-magnifying-glass"></i></button>
+                            <!-- <i class="fas fa-search fa-lg"></i> -->
+                        </span>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <!-- row-cols-○で一行の列の数を固定する -->
+        <div class="row row-cols-4 justify-content-center mt-5">
+            <div class="col-auto">
+                <a class="btn btn-lg btn-slide bgleft" href="{% url 'review:review-create' %}"><span>Evaluate your
+                        class!</span></a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- <header class="py-3 border-bottom">
+    <div class="container d-flex flex-wrap justify-content-center">
+        <nav class="d-flex align-items-center mb-lg-0 me-lg-auto text-dark text-decoration-none"
+            style="--bs-breadcrumb-divider: '>';" aria-label="パンくずリスト">
+            <ol class="breadcrumb ms-auto">
+                <li class="breadcrumb-item"><a href="index.html">ホーム</a></li>
+                <li class="breadcrumb-item active" aria-current="page">検索ページ</li>
+            </ol>
+        </nav>
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0">
+            <input type="search" class="form-control" placeholder="検索...">
+        </form>
+    </div>
+</header> -->
+
+<!-- Search window section-->
+<section class="bg-light search" id="search">
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h2>"{{ request.GET.query }}"の講義評価</h2>
+                <p class="lead description text-muted">{{ review_list | length }}件のレビュー</p>
+                <hr>
+
+
+                <!-- 'shadow p-3 mb-5 bg-white rounded'で影を指定 -->
+                {% if review_list %}
+                {% for review in review_list %}
+                <div class="card shadow mb-4 rounded">
+                    <div class="card-header bg-primary">
+                        <h5 class="mt-2 text-light">{{ review.class_name }}</h5><small class="card-title text-light">
+                            {% for teacher in review.teacher.all %}{{ teacher.name }}
+                            {% endfor %} - {{ review.year }}/{{ review.season }}/{{ review.subject_class }} </small>
+                    </div>
+                    <div class="card-body mt-0">
+                        <!-- text-truncateによってプレビュー画面の表示文字列に制限かけているので、'See more' を押したときの遷移を、条件に応じてログイン・新規登録ページか、評価の詳細ページへ飛ばすようにパスを書いて欲しい -->
+                        <p class="card-text text-truncate">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <small class="badge bg-light text-dark">単位取得難易度：</small><span
+                                        class="difficulty_star5_rating"
+                                        data-rate="{{ review.credit_difficulty }}"></span>
+                                </div>
+                                <div class="col">
+                                    <span class="badge bg-light text-dark">講義の質：</span><span class="star5_rating"
+                                        data-rate="{{ review.quality }}"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="container">
+                            <span class="badge bg-light text-dark">出席確認：{{ review.attendants_check_frequency}}
+                            </span>
+                            <br>
+
+                            <span class="badge bg-light text-dark">採点方法：
+                                {% for scoring_method in review.scoring_method.all %}
+                                {{ scoring_method.name }}
+                                {% endfor %}</span>
+                            <br>
+
+                            <span class="badge bg-light text-dark">タグ：
+                                {% for tag in review.tag.all %}
+                                {{tag.name}}
+                                {% endfor %}</span>
+                            <br>
+
+                            {% if review.opinion %}
+                            <span class="badge bg-light text-dark">コメント:{{ review.opinion }}</span>
+                            {% else %}
+                            <span class="badge bg-light text-dark">コメント: - </span>
+                            {% endif %}
+                        </div>
+                        </p>
+                    </div>
+                </div>
+                {% endfor %}
+                {% else %}
+                <div>
+                    <div class="row row-cols-4 justify-content-center mt-5">
+                        <p>検索結果はありません。</p>
+                    </div>
+                </div>
+                {% endif %}
+
+            </div>
+        </div>
+        <div class="d-grid col-4 mx-auto mt-5">
+            <!-- 一覧ページへのパスを通す -->
+            <!-- <nav aria-label="...">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="前">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="次">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav> -->
+        </div>
+    </div>
+</section>
+{% endblock content %}

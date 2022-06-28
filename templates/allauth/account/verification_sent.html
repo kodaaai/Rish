@@ -1,0 +1,15 @@
+{% extends "account/base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block head_title %}{% trans "Verify Your E-mail Address" %}{% endblock %}
+
+{% block content %}
+<h2>仮登録が完了いたしました。</h2>
+<br>
+
+<p>ご登録のメールアドレスに本登録メールを送信しました。<br>
+    メールに記載されているURLから本登録を完了してください。<br>
+    数分経っても届かない場合は、お手数ですが、<a href="{% url 'review:home' %}#contact ">こちら</a>からお問い合わせください。</p>
+
+{% endblock %}

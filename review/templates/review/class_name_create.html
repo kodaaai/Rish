@@ -1,0 +1,29 @@
+{% extends 'review/base.html'%}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+<header class="bg-primary text-white">
+    <div class="container px-4 text-center">
+        <h1 class="fw-bolder">Rish</h1>
+        <p class="lead">This website can help your course registration</p>
+    </div>
+</header>
+<section class="bg-light evaluation" id="evaluate">
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h2>Add Class</h2>
+                <p class="lead description">講義を新規追加</p>
+
+                <!-- ↓タグUIの実装と、バリデーションルールの追加が必要 -->
+                <form method='POST'>
+                    {% csrf_token %}
+                    {{ form|crispy}}
+                    <button type="submit" class="d-grid col-4 mx-auto mt-5 btn btn-primary rounded-pill">新規追加する</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
