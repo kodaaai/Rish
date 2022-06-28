@@ -5,25 +5,22 @@ from allauth.account.forms import SignupForm, LoginForm
 
 class CustomSignupForm(SignupForm):
 
-    # 大学名
-    university = forms.ChoiceField(
-        label='大学名',
-        choices=(
-            ('琉球大学', '琉球大学')
-        )
+    userName = forms.CharField(
+        label='ユーザーネーム',
+        max_length=20,
     )
-    ''' queryset=university.objects.all(),
+
+    # 大学名
+    university = forms.ModelChoiceField(
+        label='大学名',
+        queryset=university.objects.all(),
         initial=university.objects.get(id=1),
- '''
+    )
+
     # 昼間主・夜間主
     openingSystem = forms.ChoiceField(
         label='昼間主・夜間主',
         choices=User.openingSystems,
-    )
-
-    username = forms.CharField(
-        label='ユーザーネーム',
-        max_length=20,
     )
 
     # 学部
@@ -75,11 +72,13 @@ class CustomSignupForm(SignupForm):
 
     class Meta:
         model = User
+        fields = ('university', 'openingSystem', 'username', 'department', 'subject',
+                  'course', 'major', 'specialization', 'graduationYear', 'email')
 
     def signup(self, request, user):
         user.university = self.cleaned_data['university']
         user.openingSystem = self.cleaned_data['openingSystem']
-        user.username = self.cleaned_data['username']
+        user.username = self.cleaned_data['userName']
         user.department = self.cleaned_data['department']
         user.subject = self.cleaned_data['subject']
         user.course = self.cleaned_data['course']
@@ -95,12 +94,6 @@ class CustomSignupForm(SignupForm):
         self.fields['email'].label = '琉球大学メールアドレス'
 
         # それぞれの項目にform-controlのスタイルを適用
-        form_fields = ['university', 'openingSystem', 'department', 'subject',
-                       'course', 'major', 'specialization', 'graduationYear',
-                       'email', 'username', 'password1', 'password2', ]
-
-        for form_field in form_fields:
-            self.fields[f'{form_field}'].widget.attrs['class'] = "form-control"
 
 
 class CustomLoginForm(LoginForm):
@@ -108,7 +101,6 @@ class CustomLoginForm(LoginForm):
     class Meta:
         model = User
 
-    # loginformのwidgetをいじっている
     def __init__(self, *args, **kwargs):
         super(CustomLoginForm, self).__init__(*args, **kwargs)
         self.fields['login'].label = '琉球大学メールアドレス'

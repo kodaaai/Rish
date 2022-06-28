@@ -1,21 +1,17 @@
 from django import forms
-''' from accounts.models import User '''
-from .models import report, Tag, className, teacher
-''' scoring, university, '''
+from accounts.models import User
+from .models import report, Tag, className, teacher, scoring, university
 
 # 講義名登録
 
 
 class ClassCreateForm(forms.ModelForm):
 
-    university = forms.ChoiceField(
+    university = forms.ModelChoiceField(
         label='大学名',
-        choices=(
-            ('基礎演習', '基礎演習'),
-        )
+        queryset=university.objects.all(),
+        initial=User.university,
     )
-    ''' queryset=university.objects.all(),
-    initial=User.university, '''
 
     name = forms.CharField(
         label='講義名',
@@ -33,15 +29,11 @@ class ClassCreateForm(forms.ModelForm):
 # 先生登録
 class TeacherCreateForm(forms.ModelForm):
 
-    university = forms.ChoiceField(
+    university = forms.ModelChoiceField(
         label='大学名',
-        choices=(
-            ('琉球大学', '琉球大学'),
-        )
+        queryset=university.objects.all(),
+        initial=User.university,
     )
-
-    ''' queryset=university.objects.all(),
-    initial=User.university, '''
 
     name = forms.CharField(
         label='教員名',
@@ -60,14 +52,11 @@ class TeacherCreateForm(forms.ModelForm):
 
 class TagCreateForm(forms.ModelForm):
 
-    university = forms.ChoiceField(
+    university = forms.ModelChoiceField(
         label='大学名',
-        choices=(
-            ('#他学部にもおすすめ', '#他学部にもおすすめ'),
-        )
+        queryset=university.objects.all(),
+        initial=User.university,
     )
-    ''' queryset=university.objects.all(),
-        initial=User.university, '''
 
     name = forms.CharField(
         label='タグ名',
@@ -85,14 +74,11 @@ class TagCreateForm(forms.ModelForm):
 # レビュー投稿フォーム
 class ReviewCreateForm(forms.ModelForm):
 
-    university = forms.ChoiceField(
+    university = forms.ModelChoiceField(
         label='大学名',
-        choices=(
-            ('琉球大学', '琉球大学')
-        )
+        queryset=university.objects.all(),
+        initial=User.university,
     )
-    ''' queryset=university.objects.all(),
-        initial=User.university, '''
 
     # 開講年・選択肢
     years = (
@@ -141,22 +127,16 @@ class ReviewCreateForm(forms.ModelForm):
     )
 
     # 講義名
-    class_name = forms.ChoiceField(
+    class_name = forms.ModelChoiceField(
         label='講義名',
-        choices=(
-            ('基礎演習', '基礎演習')
-        )
+        queryset=className.objects.all(),
     )
-    ''' queryset=className.objects.all(), '''
 
     # 担当教員名
-    teacher = forms.MultipleChoiceField(
+    teacher = forms.ModelMultipleChoiceField(
         label='担当教員名',
-        choices=(
-            ('堀勝彦', '堀勝彦')
-        )
+        queryset=teacher.objects.all(),
     )
-    ''' queryset=teacher.objects.all(), '''
 
     # 出席確認の頻度・選択肢
     frequencies = (
@@ -203,13 +183,10 @@ class ReviewCreateForm(forms.ModelForm):
     )
 
     # 採点方法
-    scoring_method = forms.MultipleChoiceField(
+    scoring_method = forms.ModelMultipleChoiceField(
         label='採点方法',
-        choices=(
-            ('出席', '出席'),
-        )
+        queryset=scoring.objects.all(),
     )
-    ''' queryset=scoring.objects.all(), '''
 
     # コメント
     opinion = forms.CharField(
@@ -221,13 +198,10 @@ class ReviewCreateForm(forms.ModelForm):
     )
 
     # タグ
-    tag = forms.MultipleChoiceField(
+    tag = forms.ModelMultipleChoiceField(
         label='タグ',
-        choices=(
-            ('#他学部にもおすすめ', '#他学部にもおすすめ')
-        )
+        queryset=Tag.objects.all(),
     )
-    ''' queryset=Tag.objects.all(), '''
 
     class Meta:
         model = report

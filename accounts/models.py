@@ -55,7 +55,8 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     # 琉大メアド
     email = models.EmailField('琉大メールアドレス', unique=True)
-    username = models.CharField('ユーザーネーム', max_length=20, default='user', unique=True)
+
+    username = models.CharField('ユーザーネーム', max_length=20, unique=True)
 
     # 昼間主・夜間主
     openingSystems = (
@@ -197,7 +198,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     EMAIL_FIELD = 'email'
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['university', 'openingSystem',
-                       'department', 'subject', 'graduationYear', 'username']
+                       'department', 'subject', 'graduationYear', 'username', ]
 
     def __str__(self):
         return self.email

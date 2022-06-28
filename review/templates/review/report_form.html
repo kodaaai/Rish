@@ -29,6 +29,7 @@
                     {% csrf_token %}
                     <hr>
                     {{ form.university | as_crispy_field }}
+
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             {{ form.year | as_crispy_field }}

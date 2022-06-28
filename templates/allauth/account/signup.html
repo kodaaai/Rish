@@ -33,6 +33,7 @@
     <div class="col-md-8 mb-3">
       {{ form.university | as_crispy_field }}
     </div>
+
     <div class="col-md-4 mb-3">
       {{ form.openingSystem| as_crispy_field }}
     </div>
@@ -67,6 +68,9 @@
     </div>
   </div>
   <hr>
+  <div class="mb-3">
+    {{ form.userName| as_crispy_field }}
+  </div>
   <div class="mb-3">
     {{ form.password1 | as_crispy_field }}
   </div>
