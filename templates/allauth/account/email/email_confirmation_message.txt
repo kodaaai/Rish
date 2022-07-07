@@ -2,7 +2,7 @@
 {% load account %}
 {% load i18n %}
 
-{% block content %}{% autoescape off %}{% user_display user as user_display %}{% blocktrans with site_name=current_site.name site_domain=current_site.domain %}
+{% block content %}{% autoescape off %}{% user_display user as user_display %}
 本登録メール
 
 この度は「Rish」に仮登録していただき、誠にありがとうございます。
@@ -14,6 +14,6 @@
 
 *******************************************************************************
 Rish運営係メールアドレス：{{ user_display }} 
-Rish公式HP {{ site_domain }}
+Rish公式HP rish-ryukyu.com
 
- {% endblocktrans %}{% endautoescape %}{% endblock %}
+{% endautoescape %}{% endblock %}

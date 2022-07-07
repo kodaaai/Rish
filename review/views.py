@@ -31,9 +31,9 @@ class ReviewCreateView(LoginRequiredMixin, CreateView):
 
 
 class ClassCreateView(LoginRequiredMixin, CreateView):
-    model = models.className
+    model = models.class_info
     form_class = ClassCreateForm
-    template_name = "review/class_name_create.html"
+    template_name = "review/class_info_create.html"
     success_url = reverse_lazy('review:review-create')
 
 
