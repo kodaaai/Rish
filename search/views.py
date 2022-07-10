@@ -28,7 +28,7 @@ class SearchResultView(LoginRequiredMixin, ListView):
                     q_list += i
 
             keyword = reduce(
-                and_, [Q(class_name__name__icontains=q) |
+                and_, [Q(class_info__name__icontains=q) |
                        Q(teacher__name__icontains=q) for q in q_list]
             )
 

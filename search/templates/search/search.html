@@ -64,7 +64,7 @@
 
                 <!-- 'shadow p-3 mb-5 bg-white rounded'で影を指定 -->
                 {% if review_list %}
-                {% for review in reviews %}
+                {% for review in review_list %}
                 <div class="card shadow mb-4 rounded">
                     <div class="card-header bg-primary">
                         <h5 class="mt-2 text-light">{{ review.class_info.name }}</h5><small
@@ -75,7 +75,6 @@
                         </small>
                     </div>
                     <div class="card-body mt-0">
-                        <!-- text-truncateによってプレビュー画面の表示文字列に制限かけているので、'See more' を押したときの遷移を、条件に応じてログイン・新規登録ページか、評価の詳細ページへ飛ばすようにパスを書いて欲しい -->
                         <p class="card-text text-truncate">
                         <div class="container">
                             <div class="row">
@@ -89,34 +88,27 @@
                                 </div>
                             </div>
                         </div>
+
                         <hr>
                         <div class="container">
-                            <span class="badge bg-light text-dark">出席確認：{{ review.attendants_check_frequency}}
-                            </span>
-                            <br>
-
-                            <span class="badge bg-light text-dark">採点方法：
+                            <p class="badge bg-light text-dark col">出席確認：
+                                {{review.attendants_check_frequency}}
+                            </p>
+                            <p class="badge bg-light text-dark col">採点方法：
                                 {% for scoring_method in review.scoring_method.all %}
                                 {{ scoring_method.name }}
-                                {% endfor %}</span>
-                            <br>
-
-                            <span class="badge bg-light text-dark">タグ：
+                                {% endfor %}</p>
+                            <p class="badge bg-light text-dark col">タグ：
                                 {% for tag in review.tag.all %}
                                 {{tag.name}}
-                                {% endfor %}</span>
-                            <br>
-
+                                {% endfor %}</p>
+                        </div>
+                        <div class="container">
                             {% if review.opinion %}
-                            <div class="badge bg-light text-dark">
-                                コメント：
-                            </div>
-                            <br>
-                            <div class="badge bg-light text-dark text-break text-wrap text-start">
+                            <p class="bg-light text-dark">
                                 {{ review.opinion }}
-                            </div>
+                            </p>
                             {% else %}
-                            <span class="badge bg-light text-dark">コメント: - </span>
                             {% endif %}
                         </div>
                     </div>
@@ -132,26 +124,7 @@
 
             </div>
         </div>
-        <div class="d-grid col-4 mx-auto mt-5">
-            <!-- 一覧ページへのパスを通す -->
-            <!-- <nav aria-label="...">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="前">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="次">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav> -->
-        </div>
+
     </div>
 </section>
 {% endblock content %}
