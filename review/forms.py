@@ -19,6 +19,22 @@ class ClassCreateForm(forms.ModelForm):
         )
     )
 
+    subject_class = forms.ChoiceField(
+        label='講義分類',
+        choices=class_info.subject_classes,
+    )
+
+    subject_detail = forms.ChoiceField(
+        label='講義詳細',
+        choices=class_info.subject_details,
+    )
+
+    credit_num = forms.ChoiceField(
+        label='単位数',
+        choices=class_info.credit_nums,
+        initial=class_info.credit_nums[1],
+    )
+
     class Meta:
         model = class_info
         fields = ('university', 'name', 'subject_class', 'subject_detail', 'credit_num')

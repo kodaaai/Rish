@@ -36,7 +36,6 @@ class UserManager(BaseUserManager):
 
 
 class university(models.Model):
-    """ 大学名 """
     name = models.CharField('大学名', max_length=20, unique=True)
 
     def __str__(self):
@@ -44,28 +43,23 @@ class university(models.Model):
 
 
 class User(AbstractBaseUser, PermissionsMixin):
-    """ ユーザーカスタム """
 
-    # 大学名
     university = models.ForeignKey(
         university,
         verbose_name='大学名',
         on_delete=models.CASCADE,
     )
 
-    # 琉大メアド
     email = models.EmailField('琉大メールアドレス', unique=True)
 
     username = models.CharField('ユーザーネーム', max_length=20, unique=True)
 
-    # 昼間主・夜間主
     openingSystems = (
         ('昼間主', '昼間主'),
         ('夜間主', '夜間主'),
     )
     openingSystem = models.CharField('昼間主・夜間主', choices=openingSystems, max_length=10)
 
-    # 学部
     departments = (
         ('', '選択してください（必須）'),
         ('人文社会学部', '人文社会学部'),
@@ -78,7 +72,6 @@ class User(AbstractBaseUser, PermissionsMixin):
     )
     department = models.CharField('学部', max_length=20, choices=departments)
 
-    # 学科・専修
     subjects = (
         ('', '選択してください（必須）'),
         ('国際法政学科', '国際法政学科'),
@@ -99,7 +92,6 @@ class User(AbstractBaseUser, PermissionsMixin):
     )
     subject = models.CharField('学科・課程', max_length=20, choices=subjects)
 
-    # コース、プログラム
     courses = (
         ('', '選択してください（任意）'),
         ('法学プログラム', '法学プログラム'),
@@ -138,7 +130,6 @@ class User(AbstractBaseUser, PermissionsMixin):
         null=True,
     )
 
-    # 専攻
     majors = (
         ('', '選択してください（任意）'),
         ('学校教育専攻', '学校教育専攻'),
@@ -148,7 +139,6 @@ class User(AbstractBaseUser, PermissionsMixin):
     )
     major = models.CharField('専攻', max_length=20, choices=majors, blank=True, null=True)
 
-    # 専修
     specializations = (
         ('', '選択してください（任意）'),
         ('国語教育専修', '国語教育専修'),
@@ -170,25 +160,20 @@ class User(AbstractBaseUser, PermissionsMixin):
         null=True
     )
 
-    # 卒業見込み
     graduationYears = (
         ('', '選択してください（必須）'),
-        ('2022年', '2022年'),
-        ('2023年', '2023年'),
-        ('2024年', '2024年'),
-        ('2025年', '2025年'),
+        (2022, '2022年'),
+        (2023, '2023年'),
+        (2024, '2024年'),
+        (2025, '2025年'),
     )
 
-    # 卒業見込み
-    graduationYear = models.CharField('卒業見込み年', choices=graduationYears, max_length=10)
+    graduationYear = models.IntegerField('卒業見込み年', choices=graduationYears)
 
-    # 登録日
     created_at = models.DateField('登録日', auto_now_add=True)
 
-    # 更新日
     updated_at = models.DateField('更新日', auto_now=True)
 
-    # is_activeはBAN機能のようなもの。チェックを外すとそのユーザーはログインできない。
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
     is_admin = models.BooleanField(default=False)

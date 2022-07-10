@@ -64,12 +64,15 @@
 
                 <!-- 'shadow p-3 mb-5 bg-white rounded'で影を指定 -->
                 {% if review_list %}
-                {% for review in review_list %}
+                {% for review in reviews %}
                 <div class="card shadow mb-4 rounded">
                     <div class="card-header bg-primary">
-                        <h5 class="mt-2 text-light">{{ review.class_name }}</h5><small class="card-title text-light">
+                        <h5 class="mt-2 text-light">{{ review.class_info.name }}</h5><small
+                            class="card-title text-light">
                             {% for teacher in review.teacher.all %}{{ teacher.name }}
-                            {% endfor %} - {{ review.year }}/{{ review.season }}/{{ review.subject_class }} </small>
+                            {% endfor %} - {{ review.year }}/{{ review.season }}/
+                            {{ review.class_info.subject_class }}({{ review.class_info.subject_detail }})
+                        </small>
                     </div>
                     <div class="card-body mt-0">
                         <!-- text-truncateによってプレビュー画面の表示文字列に制限かけているので、'See more' を押したときの遷移を、条件に応じてログイン・新規登録ページか、評価の詳細ページへ飛ばすようにパスを書いて欲しい -->
@@ -77,12 +80,11 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col">
-                                    <small class="badge bg-light text-dark">単位取得難易度：</small><span
-                                        class="difficulty_star5_rating"
+                                    <small class="badge bg-light text-dark">単位取得難易度：</small> <span class="star5_rating"
                                         data-rate="{{ review.credit_difficulty }}"></span>
                                 </div>
                                 <div class="col">
-                                    <span class="badge bg-light text-dark">講義の質：</span><span class="star5_rating"
+                                    <span class="badge bg-light text-dark">講義の質：</span> <span class="star5_rating"
                                         data-rate="{{ review.quality }}"></span>
                                 </div>
                             </div>
@@ -106,12 +108,17 @@
                             <br>
 
                             {% if review.opinion %}
-                            <span class="badge bg-light text-dark">コメント:{{ review.opinion }}</span>
+                            <div class="badge bg-light text-dark">
+                                コメント：
+                            </div>
+                            <br>
+                            <div class="badge bg-light text-dark text-break text-wrap text-start">
+                                {{ review.opinion }}
+                            </div>
                             {% else %}
                             <span class="badge bg-light text-dark">コメント: - </span>
                             {% endif %}
                         </div>
-                        </p>
                     </div>
                 </div>
                 {% endfor %}

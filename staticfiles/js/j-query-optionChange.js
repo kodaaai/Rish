@@ -291,3 +291,74 @@ $(document).ready(function () {
         }
     })
 });
+
+/* 学部の入力に応じて学科の表示を変える */
+const subject_detail = {
+
+    共通教育: [
+        '健康運動系科目',
+        '人文系',
+        '社会系科目',
+        '自然系科目',
+        '総合科目',
+        '琉大特色科目・地域創生科目',
+        'キャリア関係科目',
+        '情報関係科目',
+        '平和共生・沖縄理解科目群',
+        '外国語',
+    ],
+
+    人文社会学部専門教育: [
+        '学部共通基盤科目',
+        '平和共生・沖縄理解基盤科目',
+        '学科基盤科目',
+        '学科発展科目',
+        'プログラム基盤科目',
+        'プログラム発展科目',
+        'プログラムコア基礎科目',
+        'プログラムコア発展科目',
+    ],
+
+    国際地域創造学部専門教育: [
+        '専門基盤力科目',
+        '地域・国際基盤力科目（プログラム系科目）',
+        '地域・国際基盤力科目（プログラム複合科目）',
+        '観光地域デザインプログラム専門科目',
+        '経営プログラム専門科目',
+        '経営プログラム専門科目（基礎科目）',
+        '経営プログラム専門科目（応用科目）',
+        '経済学プログラム専門科目（基礎科目）',
+        '経済学プログラム専門科目（応用科目）',
+        '国際言語文化プログラム専門科目',
+        '国際言語文化プログラム専門科目（基礎科目）',
+        '国際言語文化プログラム専門科目（応用科目）',
+        '地域文化科学プログラム専門科目',
+        '地域・国際実践力科目',
+    ],
+}
+
+$(document).ready(function () {
+    $('#id_subject_class').on('change', function () {
+
+        let subject_class_Val = $(this).val(); //選択された項目のvalueを取得
+
+        if (subject_class_Val) { //valueに何か値が入っていた場合
+
+            const item = subject_detail[subject_class_Val];
+
+            $('#id_subject_detail').html('');
+
+            let option;
+
+            $('#id_subject_detail').append('<option value="" >選択してください（必須）</option>')
+            for (let i = 0; i < item.length; i++) {
+                option = '<option value="' + item[i] + '">' + item[i] + '</option>';
+                $('#id_subject_detail').append(option);
+            }
+
+        } else { //valueに何も値が入っていない場合
+            $('#id_subject_detail').html('');
+            $('#id_subject_detail').append('<option value="" >選択してください（任意）</option>')
+        }
+    })
+});
