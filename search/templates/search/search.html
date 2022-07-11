@@ -37,20 +37,6 @@
         </div>
     </div>
 </header>
-<!-- <header class="py-3 border-bottom">
-    <div class="container d-flex flex-wrap justify-content-center">
-        <nav class="d-flex align-items-center mb-lg-0 me-lg-auto text-dark text-decoration-none"
-            style="--bs-breadcrumb-divider: '>';" aria-label="パンくずリスト">
-            <ol class="breadcrumb ms-auto">
-                <li class="breadcrumb-item"><a href="index.html">ホーム</a></li>
-                <li class="breadcrumb-item active" aria-current="page">検索ページ</li>
-            </ol>
-        </nav>
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0">
-            <input type="search" class="form-control" placeholder="検索...">
-        </form>
-    </div>
-</header> -->
 
 <!-- Search window section-->
 <section class="bg-light search" id="search">
@@ -98,10 +84,6 @@
                                 {% for scoring_method in review.scoring_method.all %}
                                 {{ scoring_method.name }}
                                 {% endfor %}</p>
-                            <p class="badge bg-light text-dark col">タグ：
-                                {% for tag in review.tag.all %}
-                                {{tag.name}}
-                                {% endfor %}</p>
                         </div>
                         <div class="container">
                             {% if review.opinion %}
@@ -110,6 +92,13 @@
                             </p>
                             {% else %}
                             {% endif %}
+                        </div>
+                        <div class="container">
+                            {% for tag in review.tag.all %}
+                            <p class="badge bg-light text-dark col rounded-pill">
+                                {{tag.name}}
+                            </p>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>

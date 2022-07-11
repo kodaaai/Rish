@@ -76,16 +76,21 @@
                                 {% for scoring_method in review.scoring_method.all %}
                                 {{ scoring_method.name }}
                                 {% endfor %}</p>
-                            <p class="badge bg-light text-dark col">タグ：
-                                {% for tag in review.tag.all %}
-                                {{tag.name}}
-                                {% endfor %}</p>
                         </div>
                         <div class="container">
-                            {% if review.opinion %}
+                            {% if review.opinion%}
                             <p class="bg-light text-dark">
                                 {{ review.opinion }}
                             </p>
+                            {% else %}
+                            {% endif %}
+                            {% if review.tag %}
+
+                            {% for tag in review.tag.all %}
+                            <p class="badge bg-light text-dark rounded-pill">
+                                ＃{{tag.name}}
+                            </p>
+                            {% endfor %}
                             {% else %}
                             {% endif %}
                         </div>

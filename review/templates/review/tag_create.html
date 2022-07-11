@@ -18,7 +18,12 @@
                 <!-- ↓タグUIの実装と、バリデーションルールの追加が必要 -->
                 <form method='POST'>
                     {% csrf_token %}
-                    {{ form|crispy}}
+                    <div class="mb-2">
+                        {{ form.university | as_crispy_field }}
+                    </div>
+                    <div class="mb-2">
+                        {{ form.name | as_crispy_field }}
+                    </div>
                     <button type="submit" class="d-grid col-4 mx-auto mt-5 btn btn-primary rounded-pill">新規追加する</button>
                 </form>
 

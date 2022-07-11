@@ -79,7 +79,7 @@ class TagCreateForm(forms.ModelForm):
 
     class Meta:
         model = Tag
-        fields = ('name', 'university')
+        fields = ('university', 'name')
 
 
 class ReviewCreateForm(forms.ModelForm):

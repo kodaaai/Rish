@@ -28,13 +28,15 @@
                 <form method='POST' class="container">
                     {% csrf_token %}
                     <hr>
-                    {{ form.university | as_crispy_field }}
+                    <div class="mb-2">
+                        {{ form.university | as_crispy_field }}
+                    </div>
 
                     <div class="row">
-                        <div class="col-md-6 mb-3">
+                        <div class="col-md-6 mb-2">
                             {{ form.year | as_crispy_field }}
                         </div>
-                        <div class="col-md-6 mb-3">
+                        <div class="col-md-6 mb-2">
                             {{ form.season | as_crispy_field }}
                         </div>
                     </div>
