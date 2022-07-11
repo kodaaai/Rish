@@ -73,7 +73,7 @@ class TagCreateForm(forms.ModelForm):
         label='タグ名',
         max_length=30,
         widget=forms.widgets.Input(
-            attrs={'placeholder': '例）#他学部にもおすすめ'}
+            attrs={'placeholder': '例）他学部にもおすすめ'}
         )
     )
 

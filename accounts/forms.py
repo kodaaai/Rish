@@ -10,27 +10,23 @@ class CustomSignupForm(SignupForm):
         max_length=20,
     )
 
-    # 大学名
     university = forms.ModelChoiceField(
         label='大学名',
         queryset=university.objects.all(),
         initial=university.objects.get(id=1),
     )
 
-    # 昼間主・夜間主
     openingSystem = forms.ChoiceField(
         label='昼間主・夜間主',
         choices=User.openingSystems,
     )
 
-    # 学部
     department = forms.ChoiceField(
         label='学部',
         choices=User.departments,
         widget=forms.widgets.Select,
     )
 
-    # 学科・課程
     subject = forms.ChoiceField(
         label='学科・課程',
         widget=forms.widgets.Select,
@@ -38,7 +34,6 @@ class CustomSignupForm(SignupForm):
         required=False,
     )
 
-    # コース・プログラム
     course = forms.ChoiceField(
         label='コース・プログラム',
         widget=forms.widgets.Select,
@@ -46,7 +41,6 @@ class CustomSignupForm(SignupForm):
         required=False,
     )
 
-    # 専攻
     major = forms.ChoiceField(
         label='専攻',
         widget=forms.widgets.Select,
@@ -54,7 +48,6 @@ class CustomSignupForm(SignupForm):
         required=False,
     )
 
-    # 専修
     specialization = forms.ChoiceField(
         label='専修',
         widget=forms.widgets.Select,
@@ -62,7 +55,6 @@ class CustomSignupForm(SignupForm):
         required=False,
     )
 
-    # 卒業見込み年
     graduationYear = forms.ChoiceField(
         label='卒業見込み年',
         choices=User.graduationYears,
@@ -92,9 +84,6 @@ class CustomSignupForm(SignupForm):
     def __init__(self, *args, **kwargs):
         super(CustomSignupForm, self).__init__(*args, **kwargs)
         self.fields['email'].label = '琉球大学メールアドレス'
-
-        # それぞれの項目にform-controlのスタイルを適用
-
 
 class CustomLoginForm(LoginForm):
 

@@ -28,12 +28,21 @@
 
         </div>
         <!-- row-cols-○で一行の列の数を固定する -->
+        {% if request.user.is_authenticated %}
         <div class="row row-cols-4 justify-content-center mt-5">
             <div class="col-auto">
                 <a class="btn btn-lg btn-slide bgleft" href="{% url 'review:review-create' %}"><span>Evaluate your
                         class!</span></a>
             </div>
         </div>
+        {% else %}
+        <div class="row row-cols-4 justify-content-center mt-5">
+            <div class="col-auto">
+                <a class="btn btn-lg btn-slide bgleft" href="{% url 'account_signup' %}"><span>Register and
+                        Use!</span></a>
+            </div>
+        </div>
+        {% endif %}
     </div>
 </header>
 <section class="bg-white evaluation" id="evaluate">

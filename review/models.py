@@ -129,7 +129,7 @@ class report(models.Model):
 
     quality = models.IntegerField('講義内容の満足度')
 
-    opinion = models.CharField('コメント', max_length=500, blank=True, null=True)
+    opinion = models.CharField('コメント', max_length=500)
 
     tag = models.ManyToManyField(Tag)
 
