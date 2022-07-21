@@ -8,8 +8,6 @@
         <p class="lead">This website can help your course registration</p>
     </div>
 </header>
-<!-- section.search は余白をコントロールするために記述している -->
-<!-- Evaluate section-->
 <section class="bg-light evaluation" id="evaluate">
     <div class="container px-4">
         <div class="row gx-4 justify-content-center">
@@ -24,7 +22,6 @@
                 <p class="lead description">講義を評価する</p>
                 <p class="description mx-2">
                     楽単講義、きついけど役に立つ講義、出席を取るかどうか、zoomで顔出すかどうか、教授の人柄など、様々な講義に関する情報をお待ちしております。</p>
-                <!-- ↓タグUIの実装と、バリデーションルールの追加が必要 -->
                 <form method='POST' class="container">
                     {% csrf_token %}
                     <hr>
@@ -69,7 +66,12 @@
                         {{ form.opinion | as_crispy_field }}
                     </div>
                     <div class="mb-4">
-                        {{ form.tag | as_crispy_field }}
+                        {{ form.tag.label_tag}}<br>
+                        {% for tag in form.tag %}
+                        <div class="tag-btn">
+                            {{ tag }}
+                        </div>
+                        {% endfor %}
                     </div>
                     <hr>
                     <button type="submit"
@@ -77,6 +79,13 @@
                 </form>
             </div>
         </div>
+    </div>
+    <div class="tag-btn">
+        <input type="checkbox" name="checkbox" id="check1">
+        <label for="check1">チェックしてください</label>
+    </div>
+    <div class="tag-btn">
+        <label for="check1"><input type="checkbox" name="checkbox" id="check1">test</label>
     </div>
 </section>
 {% endblock content %}

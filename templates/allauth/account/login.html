@@ -26,9 +26,9 @@
 <form class="login" method="POST" action="{% url 'account_login' %}">
   {% csrf_token %}
   {{ form.as_p }}
-  {% if redirect_field_value %}
+  <!--   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
+  {% endif %} -->
   <div class="text-center">
     <a href="{% url 'account_reset_password' %}">パスワードをお忘れですか？</a>
   </div>

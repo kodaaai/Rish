@@ -14,8 +14,6 @@
             <div class="col-lg-8">
                 <h2>Add Class</h2>
                 <p class="lead description">講義を新規追加</p>
-
-                <!-- ↓タグUIの実装と、バリデーションルールの追加が必要 -->
                 <form method='POST'>
                     {% csrf_token %}
                     {{ form|crispy}}
