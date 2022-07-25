@@ -1,0 +1,2829 @@
+[
+    {
+        "pk": 1,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "EU研究",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域・国際基盤力科目（プログラム複合科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 2,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "FP特殊講義Ⅲ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 3,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "Introduction to Global Business",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域・国際基盤力科目（プログラム複合科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 4,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "TOEFL演習",
+            "subject_class": "共通教育",
+            "subject_detail": "外国語科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 5,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "TOEIC演習",
+            "subject_class": "共通教育",
+            "subject_detail": "外国語科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 6,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "Tourism Development",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 7,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "アカデミック・プレゼンテーション",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 8,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "アカデミックプレゼンテーションⅠ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 9,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "アカデミックプレゼンテーションⅡ ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 10,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "アジア経済論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 11,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "アメリカ文学概論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 12,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "アメリカ文学研究",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 13,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "アメリカ文学研究Ⅲ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 14,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "イギリス文学概論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 15,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "イギリス文学研究 Ⅰ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 16,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "インターンシップ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（地域・国際実践力科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 17,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "インテンシブスペイン語Ⅰ",
+            "subject_class": "共通教育",
+            "subject_detail": "外国語科目",
+            "credit_num": 4
+        }
+    },
+    {
+        "pk": 18,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "ヴェトナム語基礎Ⅰ",
+            "subject_class": "共通教育",
+            "subject_detail": "外国語科目",
+            "credit_num": 4
+        }
+    },
+    {
+        "pk": 19,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "ヴェトナム語基礎Ⅱ",
+            "subject_class": "共通教育",
+            "subject_detail": "外国語科目",
+            "credit_num": 4
+        }
+    },
+    {
+        "pk": 20,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "エコツーリズム論・基礎",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "観光地域デザインプログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 21,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "オーラルコミュニケーション",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 22,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "キャリア開発演習",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（地域・国際実践力科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 23,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "キャリア形成入門",
+            "subject_class": "共通教育",
+            "subject_detail": "キャリア関係科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 24,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "グローカル実践研修",
+            "subject_class": "共通教育",
+            "subject_detail": "琉大特色科目・地域創生科目",
+            "credit_num": 1
+        }
+    },
+    {
+        "pk": 25,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "コーポレートファイナンス実践編",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 26,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "コーポレートファイナンス理論編",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 27,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "ことばの構造と意味",
+            "subject_class": "共通教育",
+            "subject_detail": "人文系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 28,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "サービスマネジメント論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 29,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "サービス経営入門",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "専門基盤力科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 30,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "サプライチェーン・マネジメント",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 31,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "ジェンダー学とインターセクショナリティー",
+            "subject_class": "共通教育",
+            "subject_detail": "社会系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 32,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "スペイン語オーラル・コミュニケーションⅠ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 33,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "スペイン語オーラル・コミュニケーションⅡ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 34,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "スペイン語トレーニングⅠ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 35,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "スペイン語トレーニングⅡ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 36,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "スペイン語ライティングⅠ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 37,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "スペイン語リーディングⅠ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 38,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "スペイン語入門",
+            "subject_class": "共通教育",
+            "subject_detail": "外国語科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 39,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "スペイン語入門Ⅰ",
+            "subject_class": "共通教育",
+            "subject_detail": "外国語科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 40,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "スペイン語入門Ⅱ",
+            "subject_class": "共通教育",
+            "subject_detail": "外国語科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 41,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "スペイン語文学史",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 42,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "スペイン語文法Ⅰ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 43,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "スペイン社会研究",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 44,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "ツーリズム・ビジネス英語・基礎",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "観光地域デザインプログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 45,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "ツーリズム韓国語・応用",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "観光地域デザインプログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 46,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "ツーリズム中国語・応用",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "観光地域デザインプログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 47,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "ツーリズム中国語・基礎",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "観光地域デザインプログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 48,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "データサイエンス概論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域・国際基盤力科目（プログラム系科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 49,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "データサイエンス初級",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "専門基盤力科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 50,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "テーマ型ツーリズム入門",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "専門基盤力科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 51,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "バリアフリー観光論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "観光地域デザインプログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 52,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "ヒトの健康科学",
+            "subject_class": "共通教育",
+            "subject_detail": "自然系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 53,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "ファイナンス理論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 54,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "ベンチャー企業論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 55,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "ベンチャー起業論 実践",
+            "subject_class": "共通教育",
+            "subject_detail": "社会系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 56,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "ベンチャー起業論 入門",
+            "subject_class": "共通教育",
+            "subject_detail": "社会系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 57,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "ホテル経営論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 58,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "マーケティング実践研究",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 59,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "マーケティング入門",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "専門基盤力科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 60,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "マクロ経済学（応用）",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 61,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "マクロ経済学（基礎）",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 62,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "まちづくり地域興し論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 63,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "ミクロ経済学（応用）",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 64,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "ミクロ経済学（基礎）",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 65,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "メディアの英語",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域・国際基盤力科目（プログラム複合科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 66,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "ヨーロッパ文化論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "専門基盤力科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 67,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "ライティング",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 68,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "ライティングⅡ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 69,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "ランドスケープ論",
+            "subject_class": "共通教育",
+            "subject_detail": "自然系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 70,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "リーディング",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 71,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "リーディングⅠ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 72,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "ロマン派文学",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 73,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "異文化理解",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域・国際基盤力科目（プログラム系科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 74,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "移民論",
+            "subject_class": "共通教育",
+            "subject_detail": "琉大特色科目・地域創生科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 75,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "医療と観光",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "観光地域デザインプログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 76,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "宇宙の科学",
+            "subject_class": "共通教育",
+            "subject_detail": "自然系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 77,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "ウエイトトレーニング",
+            "subject_class": "共通教育",
+            "subject_detail": "健康運動系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 78,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "バトミントン",
+            "subject_class": "共通教育",
+            "subject_detail": "健康運動系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 79,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "ハンドボール",
+            "subject_class": "共通教育",
+            "subject_detail": "健康運動系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 80,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "フットサル",
+            "subject_class": "共通教育",
+            "subject_detail": "健康運動系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 81,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "運輸ビジネス論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "観光地域デザインプログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 82,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "英会話演習 中級",
+            "subject_class": "共通教育",
+            "subject_detail": "外国語科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 83,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "英語コミュニケーションの多様性",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 84,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "英語スピーチ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 85,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "英語の意味解釈",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 86,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "英語の音声構造",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 87,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "英語プレゼンテーション演習 中級",
+            "subject_class": "共通教育",
+            "subject_detail": "外国語科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 88,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "英語科教育法A",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "教職課程",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 89,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "英語科教育法C",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "教職課程",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 90,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "英語学習論Ⅰ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 91,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "英語学習論Ⅱ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 92,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "英語研究Ⅰ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 93,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "英語研究Ⅲ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 94,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "英語講読演習 上級",
+            "subject_class": "共通教育",
+            "subject_detail": "外国語科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 95,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "英語購読演習 中級",
+            "subject_class": "共通教育",
+            "subject_detail": "外国語科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 96,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "英語資格試験演習",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 97,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "英作文演習 中級",
+            "subject_class": "共通教育",
+            "subject_detail": "外国語科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 98,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "英文法演習",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 99,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "英米言語文化特殊講義Ⅰ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 100,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "英米言語文化特殊講義Ⅱ ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 101,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "英米文化入門",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "専門基盤力科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 102,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "英米文学概論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "専門基盤力科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 103,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "応用観光科学Ⅳ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "観光地域デザインプログラム専門科目（地域・国際実践力科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 104,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "応用簿記論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（応用科目）",
+            "credit_num": 4
+        }
+    },
+    {
+        "pk": 105,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "沖縄のサンゴ礁",
+            "subject_class": "共通教育",
+            "subject_detail": "琉大特色科目・地域創生科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 106,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "沖縄の学力と教育",
+            "subject_class": "共通教育",
+            "subject_detail": "琉大特色科目・地域創生科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 107,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "沖縄の歴史入門",
+            "subject_class": "共通教育",
+            "subject_detail": "琉大特色科目・地域創生科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 108,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "沖縄観光と健康入門",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域・国際基盤力科目（プログラム系科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 109,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "沖縄観光ビジネス入門",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域・国際基盤力科目（プログラム系科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 110,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "沖縄観光政策入門",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域・国際基盤力科目（プログラム系科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 111,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "沖縄経済入門",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域・国際基盤力科目（プログラム複合科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 112,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "沖縄民俗社会論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域文化科学プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 113,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "科学と哲学",
+            "subject_class": "人文社会学部専門教育",
+            "subject_detail": "プログラム発展科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 114,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "会計ファイナンス入門",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "専門基盤力科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 115,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "会計学",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 116,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "海洋の科学",
+            "subject_class": "共通教育",
+            "subject_detail": "自然系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 117,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "開発経済学",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 118,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "学習・言語心理学",
+            "subject_class": "人文社会学部専門教育",
+            "subject_detail": "プログラム発展科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 119,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "環境経済学",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 120,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "管理会計基礎論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 121,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "観光とサステナビリティ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "専門基盤力科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 122,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "観光フィールドワーク演習",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "観光地域デザインプログラム専門科目（地域・国際実践力科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 123,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "観光マーケティング論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 124,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "観光マネジメント論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 125,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "観光関連法規・基礎",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "観光地域デザインプログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 126,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "観光景観論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "観光地域デザインプログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 127,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "観光事業論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 128,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "観光自然人類学",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "観光地域デザインプログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 129,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "観光社会学・基礎",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "観光地域デザインプログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 130,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "観光情報論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 131,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "観光心理学",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "観光地域デザインプログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 132,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "観光地域デザイン・プレ演習",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "観光地域デザインプログラム専門科目（地域・国際実践力科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 133,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "観光地域デザイン入門",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "専門基盤力科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 134,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "観光地理学",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "観光地域デザインプログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 135,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "基礎演習",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "専門基盤力科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 136,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "基礎行政法",
+            "subject_class": "人文社会学部専門教育",
+            "subject_detail": "学科発展科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 137,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "基礎統計学",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 138,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "基礎労働法",
+            "subject_class": "人文社会学部専門教育",
+            "subject_detail": "プログラム発展科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 139,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "競争戦略論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 140,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "共生社会にむけたアクセシビリティ",
+            "subject_class": "共通教育",
+            "subject_detail": "人文系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 141,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "共生哲学",
+            "subject_class": "人文社会学部専門教育",
+            "subject_detail": "平和共生・沖縄理解基盤科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 142,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "教育経済学",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 143,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "金融論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 144,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "刑事政策",
+            "subject_class": "人文社会学部専門教育",
+            "subject_detail": "学科発展科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 145,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "刑法総論",
+            "subject_class": "人文社会学部専門教育",
+            "subject_detail": "学科発展科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 146,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "経営学入門",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "専門基盤力科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 147,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "経営情報論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 148,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "経営戦略論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 149,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "経営組織論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 150,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "経済の歴史",
+            "subject_class": "共通教育",
+            "subject_detail": "社会系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 151,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "経済学概論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "専門基盤力科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 152,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "経済史入門",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域・国際基盤力科目（プログラム系科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 153,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "経済数学（応用）",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 154,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "経済数学（基礎）",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 155,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "経済政策論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 156,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "憲法Ⅰ",
+            "subject_class": "人文社会学部専門教育",
+            "subject_detail": "学科発展科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 157,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "憲法概論",
+            "subject_class": "共通教育",
+            "subject_detail": "社会系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 158,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "現代沖縄地域論",
+            "subject_class": "共通教育",
+            "subject_detail": "琉大特色科目・地域創生科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 159,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "現代会計のしくみ",
+            "subject_class": "共通教育",
+            "subject_detail": "社会系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 160,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "現代経済のしくみ",
+            "subject_class": "共通教育",
+            "subject_detail": "社会系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 161,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "現代経済の諸問題",
+            "subject_class": "共通教育",
+            "subject_detail": "社会系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 162,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "現代社会のしくみ",
+            "subject_class": "共通教育",
+            "subject_detail": "社会系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 163,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "言語科学入門",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "専門基盤力科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 164,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "交通サービス論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 165,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "広告論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 166,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "考古学Ⅰ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域・国際基盤力科目（プログラム系科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 167,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "考古学研究Ⅱ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域文化科学プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 168,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "行政学",
+            "subject_class": "人文社会学部専門教育",
+            "subject_detail": "学科発展科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 169,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "国際経済学",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 170,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "国際経済入門",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 171,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "国際社会学",
+            "subject_class": "人文社会学部専門教育",
+            "subject_detail": "学科発展科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 172,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "財政学",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 173,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "財務会計",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 174,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "財務会計論演習",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 175,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "私法学特殊講義 B",
+            "subject_class": "人文社会学部専門教育",
+            "subject_detail": "プログラム発展科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 176,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "自然観光資源概論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "観光地域デザインプログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 177,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "自然地理学概論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "専門基盤力科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 178,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "実践！社会政策",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "専門基盤力科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 179,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "実践経済学Ⅰ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（地域・国際実践力科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 180,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "社会科学のためのゲーム論入門",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "専門基盤力科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 181,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "社会科学のための統計入門",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "専門基盤力科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 182,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "社会経済史",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 183,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "社会政策入門",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 184,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "社会政策論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 185,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "社会調査法",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "観光地域デザインプログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 186,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "宗教と世界",
+            "subject_class": "共通教育",
+            "subject_detail": "人文系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 187,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "商法Ⅰ",
+            "subject_class": "人文社会学部専門教育",
+            "subject_detail": "プログラム発展科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 188,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "情報科学演習",
+            "subject_class": "共通教育",
+            "subject_detail": "情報関係科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 189,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "心の科学",
+            "subject_class": "共通教育",
+            "subject_detail": "人文系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 190,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "心理学入門Ⅰ",
+            "subject_class": "共通教育",
+            "subject_detail": "人文系科目",
+            "credit_num": 1
+        }
+    },
+    {
+        "pk": 191,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "神経・生理心理学",
+            "subject_class": "人文社会学部専門教育",
+            "subject_detail": "プログラム発展科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 192,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "人の移動とグローバル社会",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域・国際基盤力科目（プログラム複合科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 193,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "人間と哲学の知",
+            "subject_class": "共通教育",
+            "subject_detail": "人文系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 194,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "人間関係論",
+            "subject_class": "共通教育",
+            "subject_detail": "人文系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 195,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "人的資源管理論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 196,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "人文地理学概論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域文化科学プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 197,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "人類文化入門",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "専門基盤力科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 198,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "数字で学ぶビジネス",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 199,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "数理の構造",
+            "subject_class": "共通教育",
+            "subject_detail": "自然系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 200,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "世界史概論（西洋史）",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域・国際基盤力科目（プログラム系科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 201,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "世界史概論（東洋史）",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域・国際基盤力科目（プログラム系科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 202,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "生命の科学",
+            "subject_class": "共通教育",
+            "subject_detail": "自然系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 203,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "生命保険実務",
+            "subject_class": "共通教育",
+            "subject_detail": "キャリア関係科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 204,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "西洋経済史",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 205,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "税法応用",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 206,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "税法基礎",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 207,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "戦争と平和の諸問題",
+            "subject_class": "共通教育",
+            "subject_detail": "社会系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 208,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "組織行動論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 209,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "大学英語",
+            "subject_class": "共通教育",
+            "subject_detail": "外国語科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 210,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "大気の科学",
+            "subject_class": "共通教育",
+            "subject_detail": "自然系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 211,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "卓球",
+            "subject_class": "共通教育",
+            "subject_detail": "健康運動系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 212,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "地域・国際実践力演習Ⅰ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "観光地域デザインプログラム専門科目（地域・国際実践力科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 213,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "地域・国際実践力演習Ⅰ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（地域・国際実践力科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 214,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "地域・国際実践力演習Ⅰ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（地域・国際実践力科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 215,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "地域・国際実践力演習Ⅰ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "国際言語文化プログラム専門科目（地域・国際実践力科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 216,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "地域・国際実践力演習Ⅰ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域文化科学プログラム専門科目（地域・国際実践力科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 217,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "地域と生活",
+            "subject_class": "共通教育",
+            "subject_detail": "社会系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 218,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "地域の科学",
+            "subject_class": "共通教育",
+            "subject_detail": "琉大特色科目・地域創生科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 219,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "地域経済入門",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域・国際基盤力科目（プログラム系科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 220,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "地域政策論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 221,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "地域文化資源と博物館",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域・国際基盤力科目（プログラム複合科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 222,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "地球の科学",
+            "subject_class": "共通教育",
+            "subject_detail": "自然系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 223,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "地球環境と科学技術",
+            "subject_class": "共通教育",
+            "subject_detail": "自然系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 224,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "地誌学とフィールド",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域文化科学プログラム専門科目（地域・国際実践力科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 225,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "地誌学概論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域・国際基盤力科目（プログラム系科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 226,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "地方財政論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 227,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "地理総合",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "専門基盤力科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 228,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "中国語基礎Ⅰ",
+            "subject_class": "共通教育",
+            "subject_detail": "外国語科目",
+            "credit_num": 4
+        }
+    },
+    {
+        "pk": 229,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "中小企業論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 230,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "朝鮮語基礎Ⅰ",
+            "subject_class": "共通教育",
+            "subject_detail": "外国語科目",
+            "credit_num": 4
+        }
+    },
+    {
+        "pk": 231,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "適応の心理",
+            "subject_class": "共通教育",
+            "subject_detail": "総合科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 232,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "島嶼社会経済入門",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域・国際基盤力科目（プログラム複合科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 233,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "日本の政治",
+            "subject_class": "共通教育",
+            "subject_detail": "社会系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 234,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "日本経済史",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 235,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "日本経済入門",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "専門基盤力科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 236,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "日本史概論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域文化科学プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 237,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "日本政治外交史Ⅰ",
+            "subject_class": "人文社会学部専門教育",
+            "subject_detail": "学科発展科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 238,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "日本文学特講Ⅰ",
+            "subject_class": "人文社会学部専門教育",
+            "subject_detail": "プログラム発展科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 239,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "物流サービス論 ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 240,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "文化財と博物館",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域文化科学プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 241,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "文学の楽しみ",
+            "subject_class": "共通教育",
+            "subject_detail": "人文系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 242,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "簿記入門",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "専門基盤力科目",
+            "credit_num": 4
+        }
+    },
+    {
+        "pk": 243,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "簿記論演習",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 244,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "法と経済学",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経済学プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 245,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "法と社会",
+            "subject_class": "共通教育",
+            "subject_detail": "社会系科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 246,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "法学概論",
+            "subject_class": "人文社会学部専門教育",
+            "subject_detail": "学科基盤科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 247,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "法学特殊講義A",
+            "subject_class": "人文社会学部専門教育",
+            "subject_detail": "プログラム発展科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 248,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "民俗学Ⅰ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域・国際基盤力科目（プログラム系科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 249,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "民俗学Ⅱ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域文化科学プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 250,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "民俗学研究Ⅳ ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域文化科学プログラム専門科目（応用科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 251,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "民族誌Ⅰ",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "地域文化科学プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 252,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "流通原論",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "経営プログラム専門科目（基礎科目）",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 253,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "琉球の地理",
+            "subject_class": "共通教育",
+            "subject_detail": "琉大特色科目・地域創生科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 254,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "琉球の文学",
+            "subject_class": "共通教育",
+            "subject_detail": "琉大特色科目・地域創生科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 255,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "琉球学入門",
+            "subject_class": "共通教育",
+            "subject_detail": "琉大特色科目・地域創生科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 256,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "琉球弧の自然誌",
+            "subject_class": "共通教育",
+            "subject_detail": "琉大特色科目・地域創生科目",
+            "credit_num": 2
+        }
+    },
+    {
+        "pk": 257,
+        "model": "review.class_info",
+        "fields": {
+            "university": 1,
+            "name": "歴史総合",
+            "subject_class": "国際地域創造学部専門教育",
+            "subject_detail": "専門基盤力科目",
+            "credit_num": 2
+        }
+    }
+]

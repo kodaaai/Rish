@@ -178,7 +178,6 @@ class ReviewCreateForm(forms.ModelForm):
     opinion = forms.CharField(
         label='コメント',
         max_length=500,
-        required=False,
         widget=forms.Textarea(
             attrs={'rows': 4}),
     )

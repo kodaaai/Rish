@@ -96,9 +96,12 @@
                             {% if review.tag %}
 
                             {% for tag in review.tag.all %}
+                            {% if not tag.id is 3%}
                             <p class="badge bg-light text-dark rounded-pill">
                                 ＃{{tag.name}}
                             </p>
+                            {%else%}
+                            {%endif%}
                             {% endfor %}
                             {% else %}
                             {% endif %}

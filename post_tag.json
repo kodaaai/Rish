@@ -1,0 +1,298 @@
+[
+    {
+        "pk": 1,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "学びが多い"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "オンデマンド"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "タグなし"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "集中講義"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "テスト対策しやすい"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "先生優しい"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "リモート顔出し必須"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "リモート形式"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "講義内容難しめ"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "対面形式"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "ペアワークあり"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "オンデマンド形式"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "オムニバス形式"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "課外実習あり"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "遅刻厳禁"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "グループワーク多め"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "テスト難しめ"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "朝早い"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "課題多め"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "A取りやすい"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "A取りづらい"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "説明がわかりやすい"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "経済コース必修"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "専攻外の人にもおすすめ"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "専攻外の人には勧めない"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "好み分かれる"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "評価厳しめ"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "初学者にもおすすめ"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "友達と取った方が良い"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "自学必須"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "テスト範囲広い"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "頑張りたい人におすすめ"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "教科書必須"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "課題軽め"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "課題重め"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "テストに資料持ち込み可"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "review.Tag",
+        "fields": {
+            "university": 1,
+            "name": "テスト多め"
+        }
+    }
+]

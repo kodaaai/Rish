@@ -1,0 +1,66 @@
+[
+    {
+        "pk": 1,
+        "model": "review.scoring",
+        "fields": {
+            "university": 1,
+            "name": "出席"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "review.scoring",
+        "fields": {
+            "university": 1,
+            "name": "課題"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "review.scoring",
+        "fields": {
+            "university": 1,
+            "name": "テスト"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "review.scoring",
+        "fields": {
+            "university": 1,
+            "name": "グループワーク"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "review.scoring",
+        "fields": {
+            "university": 1,
+            "name": "プレゼン"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "review.scoring",
+        "fields": {
+            "university": 1,
+            "name": "課外活動"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "review.scoring",
+        "fields": {
+            "university": 1,
+            "name": "その他"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "review.scoring",
+        "fields": {
+            "university": 1,
+            "name": "不明"
+        }
+    }
+]

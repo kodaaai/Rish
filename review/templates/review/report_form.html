@@ -66,12 +66,7 @@
                         {{ form.opinion | as_crispy_field }}
                     </div>
                     <div class="mb-4">
-                        {{ form.tag.label_tag}}<br>
-                        {% for tag in form.tag %}
-                        <div class="tag-btn">
-                            {{ tag }}
-                        </div>
-                        {% endfor %}
+                        {{ form.tag | as_crispy_field}}
                     </div>
                     <hr>
                     <button type="submit"
@@ -79,13 +74,6 @@
                 </form>
             </div>
         </div>
-    </div>
-    <div class="tag-btn">
-        <input type="checkbox" name="checkbox" id="check1">
-        <label for="check1">チェックしてください</label>
-    </div>
-    <div class="tag-btn">
-        <label for="check1"><input type="checkbox" name="checkbox" id="check1">test</label>
     </div>
 </section>
 {% endblock content %}

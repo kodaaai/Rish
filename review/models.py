@@ -1,7 +1,6 @@
 from django.db import models
 from django.db.models.fields import CharField
 from django.contrib.auth import get_user_model as user_model
-from sqlalchemy import true
 from accounts.models import university
 
 User = user_model()
@@ -11,7 +10,7 @@ class class_info(models.Model):
     university = models.ForeignKey(university, verbose_name='大学名',
                                    on_delete=models.CASCADE)
 
-    name = models.CharField('講義名', max_length=30, unique=True)
+    name = models.CharField('講義名', max_length=50)
 
     subject_classes = (
         ('', '選択してください（必須）'),
@@ -47,7 +46,7 @@ class class_info(models.Model):
         ('地域・国際基盤力科目（プログラム複合科目）', '地域・国際基盤力科目（プログラム複合科目）'),
         ('観光地域デザインプログラム専門科目（基礎科目）', '観光地域デザインプログラム専門科目（基礎科目）'),
         ('観光地域デザインプログラム専門科目（応用科目）', '観光地域デザインプログラム専門科目（応用科目）'),
-        ('観光地域デザインプログラム専門科目（地域・国際実践力科目）', '観光地域デザインプログラム専門科目（地域・国際実践力科目）')
+        ('観光地域デザインプログラム専門科目（地域・国際実践力科目）', '観光地域デザインプログラム専門科目（地域・国際実践力科目）'),
         ('経営プログラム専門科目（基礎科目）', '経営プログラム専門科目（基礎科目）'),
         ('経営プログラム専門科目（応用科目）', '経営プログラム専門科目（応用科目）'),
         ('経営プログラム専門科目（地域・国際実践力科目）', '経営プログラム専門科目（地域・国際実践力科目）'),
@@ -63,7 +62,7 @@ class class_info(models.Model):
         ('教職課程', '教職課程'),
     )
 
-    subject_detail = models.CharField('講義詳細', max_length=30, choices=subject_details)
+    subject_detail = models.CharField('講義詳細', max_length=50, choices=subject_details)
 
     credit_nums = (
         (1, '1単位'),
@@ -85,7 +84,8 @@ class teacher(models.Model):
 
 
 class scoring(models.Model):
-    university = models.ForeignKey(university, verbose_name='大学名', on_delete=models.CASCADE)
+    university = models.ForeignKey(university, verbose_name='大学名',
+                                   on_delete=models.CASCADE)
     name = models.CharField('採点方法', max_length=20, unique=True)
 
     def __str__(self):
@@ -93,6 +93,8 @@ class scoring(models.Model):
 
 
 class Tag(models.Model):
+    university = models.ForeignKey(university, verbose_name='大学名',
+                                   on_delete=models.CASCADE)
     name = CharField('タグ名', max_length=20, unique=True)
 
     def __str__(self):
@@ -135,13 +137,13 @@ class report(models.Model):
 
     quality = models.IntegerField('講義内容の満足度')
 
-    opinion = models.CharField('コメント', max_length=500, null=True, blank=True)
+    opinion = models.CharField('コメント', max_length=1000, null=True, blank=True)
 
     tag = models.ManyToManyField(Tag)
 
-    created_at = models.DateField('投稿日', auto_now_add=True)
+    created_at = models.DateField('投稿日', auto_now_add=True, null=True, blank=True)
 
-    updated_at = models.DateField('更新日', auto_now=True)
+    updated_at = models.DateField('更新日', auto_now=True,  null=True, blank=True)
 
     author = models.ForeignKey(
         User,
