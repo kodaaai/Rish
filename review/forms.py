@@ -185,7 +185,7 @@ class ReviewCreateForm(forms.ModelForm):
     tag = forms.ModelMultipleChoiceField(
         label='タグ',
         queryset=Tag.objects.all(),
-        widget=forms.CheckboxSelectMultiple(),
+
     )
 
     class Meta:
